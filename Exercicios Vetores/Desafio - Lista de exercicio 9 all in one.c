@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define TAM 4
+#define TAM 100
 
 
 
