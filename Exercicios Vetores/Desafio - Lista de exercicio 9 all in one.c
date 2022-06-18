@@ -73,8 +73,8 @@ void functionShowValueOnPosition (int j, int array[]){
 }
 
 void functionGreaterValueOnArray(int j, int array[]){
-  int greater=0, i;
-  for (i=0;i<j;i++){
+  int greater=array[0], i;
+  for (i=1;i<j;i++){
     if (array[i]>greater){
       greater=array[i];
     }
