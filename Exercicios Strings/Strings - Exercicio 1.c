@@ -6,7 +6,7 @@ void imprime_vertical (char nome[]){
     lenght = strlen(nome);
 
     for(i=0;nome[i]!='\0';i++){
-        printf("%c\n", nome[i]);
+        printf("\n%c", nome[i]);
     }
 }
 
@@ -18,10 +18,6 @@ int main(void){
     scanf(" %[^\n]", firstName);
     printf("Digite seu sobrenome: \n");
     scanf(" %[^\n]", secondName);
-
-    strcat(secondName,firstName);
-
-    printf("%s", secondName);
 
     imprime_vertical(firstName);
     printf("\n");
