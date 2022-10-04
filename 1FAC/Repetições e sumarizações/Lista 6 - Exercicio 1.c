@@ -9,14 +9,14 @@ int main(void) {
   int contador=0;
   float notaDaProva, notaMediaTrabalho, mediaAluno, somaMediaAluno, menorNota=10, maiorNota=0;
   
-  printf("\nDigite o numero da sua matricula: ");
+  printf("\nDigite a matricula do aluno(0 para finalizar): ");
   scanf("%d", &matricula);
-  printf("Digite a nota da sua prova: ");
-  scanf("%f", &notaDaProva);
-  printf("Digite a média dos trabalhos: ");
-  scanf("%f", &notaMediaTrabalho);
 
   while(matricula!=0){
+    printf("Digite a nota da sua prova: ");
+    scanf("%f", &notaDaProva);
+    printf("Digite a média dos trabalhos: ");
+    scanf("%f", &notaMediaTrabalho);
     mediaAluno = calculaMediaAluno(notaDaProva, notaMediaTrabalho);
     if(mediaAluno<3){
       abaixode3++;
@@ -25,23 +25,29 @@ int main(void) {
       acimade7++;
     }
     if(mediaAluno>=maiorNota){
-      maiorNota=mediaAluno;
-      maiorMedia++;
+      if(maiorNota==mediaAluno){
+        maiorMedia++;
+      }
+      else{
+        maiorNota=mediaAluno;
+        maiorMedia=1;
+      }
     }
     if(mediaAluno<=menorNota){
-      menorNota=mediaAluno;
-      menorMedia++;
+      if(menorNota==mediaAluno){
+        menorMedia++;
+      }
+      else{
+        menorNota=mediaAluno;
+        menorMedia=1;
+      }
     }
     contador++;
     somaMediaAluno+=mediaAluno; //somaMediaAluno=somaMediaAluno+mediaAluno;
     printf("\nA média do aluno de matricula %d é: %.2f", matricula, mediaAluno);
   
-    printf("\n\n\nDigite o numero da sua matricula: ");
+    printf("\n\n\nDigite a matricula do aluno(0 para finalizar): ");
     scanf("%d", &matricula);
-    printf("Digite a nota da sua prova: ");
-    scanf("%f", &notaDaProva);
-    printf("Digite a média dos trabalhos: ");
-    scanf("%f", &notaMediaTrabalho);
   }
   
   printf("\n\n\nAlunos com nota acima de 7: %d", acimade7);
