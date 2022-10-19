@@ -1,3 +1,12 @@
+/*
+Considere a existência do tipo TAluno contendo as seguintes informações sobre um aluno: nome, nota na AV1, nota na AV2, média e situação.
+Dado, portanto, um vetor do tipo TAluno, contendo quant posições, fazer uma função que verifique se o vetor está ordenado, conforme os seguintes critérios:
+1. As médias devem estar ordenadas de forma decrescente;
+2. No caso de médias iguais, os respectivos nomes dos alunos devem estar ordenados crescentemente.
+Caso o vetor esteja ordenado conforme regras citadas acima, a função deverá retornar a constante TRUE; caso contrário, FALSE.
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 #define TRUE 1
@@ -64,7 +73,7 @@ int main(void) {
 
 int questao3(TAluno vetor[], int qtdAlunos){
 
-  for (int i = 0 ; i < qtdAlunos ; i++){
+  for (int i = 0 ; i < qtdAlunos-1 ; i++){
     if( vetor[i].media < vetor[i+1].media ){
       return FALSE;
     }
