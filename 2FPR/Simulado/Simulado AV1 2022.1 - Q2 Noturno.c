@@ -1,3 +1,8 @@
+/*
+Implementar uma função que, dadas duas strings s1 e s2, crie uma nova string – s3 – contendo todos os caracteres de s1 que não estejam em s2.
+Nota: em s3, não devem existir caracteres repetidos.
+*/
+
 #include <stdio.h>
 #include <string.h>
 #define TAM 11
