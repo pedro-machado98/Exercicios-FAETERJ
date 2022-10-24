@@ -1,19 +1,20 @@
 #include <stdio.h>
-#define TAM 5
-void exibeStringInvertida(char s1[], int quant, int cont){
 
-  if (cont < quant){
-    exibeStringInvertida(s1, quant, cont+1);
+void exibeStringInvertidaAux(char s1[], int cont){
+
+  if (s1[cont]){
+    exibeStringInvertidaAux(s1, cont+1);
     printf("%c", s1[cont]);
   }
 }
 
-int main(void) {
-  char s1[TAM]="abcd";
-  int cont=0;
-  int quant=TAM;
+void exibeStringInvertida(char s[]){
+  exibeStringInvertidaAux(s, 0);
+}
 
-  exibeStringInvertida(s1, quant, cont);
+int main(void) {
+
+  exibeStringInvertida("teste");
   
   return 0;
 }
