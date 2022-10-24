@@ -1,3 +1,7 @@
+/*
+Desenvolver uma função recursiva que, dada uma string, exiba-a invertida.
+*/
+
 #include <stdio.h>
 
 void exibeStringInvertidaAux(char s1[], int cont){
