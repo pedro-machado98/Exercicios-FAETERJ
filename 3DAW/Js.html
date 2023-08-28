@@ -1,0 +1,19 @@
+<!DOCTYPE html5>
+<html lang="pt-BR">
+    <head>
+    </head>
+    <body>
+        <p id="resultado"></p>
+        <script>
+            let elemento = document.getElementById("resultado");
+            let nomesMenores = "";
+            var nomes = [ "Ana", "Letícia", "Pedro", "Artur", "Ludmila", "Augusto", "Frederico", "Igor", "João" ];
+            for(let i = 0 ; i < nomes.length ; i++) {
+                if(nomes[i].length < 6) {
+                    nomesMenores += nomes[i] + "<br>";
+                }
+            }
+            elemento.innerHTML = nomesMenores;
+        </script>
+    </body>
+</html>

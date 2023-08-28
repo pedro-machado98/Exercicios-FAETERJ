@@ -1,0 +1,51 @@
+/* estilos para o header */
+header {
+	background-color: #f2f2f2;
+	box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ .logo img {
+	max-width: 40%;
+	height: auto;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.menu li {
+	padding: 10px;
+}
+
+.menu li a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+
+.menu li a:hover {
+	background-color: #e6e6e6;
+} 
+
+/* estilos para o footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+footer p {
+	margin: 0;
+	text-align: center;
+}

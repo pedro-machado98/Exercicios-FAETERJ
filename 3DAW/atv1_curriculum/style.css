@@ -1,0 +1,71 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;  
+}
+
+.fotoPerfil {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+  
+.divNavegacao{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.divNavegacao ul{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 15px;
+    
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.divNavegacao li{
+    list-style-type: none;
+    float:center;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    display: inline;
+}
+
+.divNavegacao li :hover {
+    background-color:black;
+    color:white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.divNavegacao li a {
+    color: black;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+
+
+#tabela {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+table {
+    float: center;
+    height: 200px;
+    width: 1000px;
+    margin: 0 auto;
+}
+

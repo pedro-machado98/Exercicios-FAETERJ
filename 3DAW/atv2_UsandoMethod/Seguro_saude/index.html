@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <form class="form-horizontal" method="post" action="Seguro.php">
+
+        <h2>Registre-se no site</h2>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="nomeCompleto">Nome Completo</label>
+          <div class="col-sm-10">
+            <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="doencaPrevia" value="S">Marque se possuir doença previa.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Faixa Etária:</label>
+          <div class="col-sm-10">
+              <select class="form-control" name="faixaEtaria[]">
+                <option value="0">20 anos ou menos</option>
+                <option value="1">21 até 30</option>
+                <option value="2">31 até 40</option>
+                <option value="3">41 até 50</option>
+                <option value="4">51 até 65</option>
+                <option value="5">66 ou mais</option>
+              </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Enviar</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </body>
+</html>

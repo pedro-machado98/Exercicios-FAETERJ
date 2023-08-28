@@ -1,0 +1,17 @@
+{
+    "name": "mbelo/bazar_oo",
+    "description": "BazarOO",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Mbelo\\BazarOo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Márcio Belo",
+            "email": "mbelo.br@gmail.com"
+        }
+    ],
+    "require": {}
+}
