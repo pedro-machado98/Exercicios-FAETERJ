@@ -14,7 +14,7 @@ public class Main {
 				
 		try {
 			Estudante e1 = new Estudante("Pedro", 25, 1234);
-			FileOutputStream arqSer = new FileOutputStream("C:\\Users\\pedro.machado\\Desktop\\Repositorio GitHub\\Workspace Eclipse\\AP3\\files\\a.ser");
+			FileOutputStream arqSer = new FileOutputStream(".\\src\\file\\a.ser");
 			ObjectOutputStream oSer = new ObjectOutputStream(arqSer);
 			
 			oSer.writeObject(e1);
@@ -26,7 +26,7 @@ public class Main {
 			System.out.println(e1);
 			System.out.println("----------------");
 			
-			FileInputStream arqDes = new FileInputStream("C:\\Users\\pedro.machado\\Desktop\\Repositorio GitHub\\Workspace Eclipse\\AP3\\files\\a.ser");
+			FileInputStream arqDes = new FileInputStream(".\\src\\file\\a.ser");
 			ObjectInputStream oDes = new ObjectInputStream(arqDes);
 			
 			e1 = (Estudante) oDes.readObject();

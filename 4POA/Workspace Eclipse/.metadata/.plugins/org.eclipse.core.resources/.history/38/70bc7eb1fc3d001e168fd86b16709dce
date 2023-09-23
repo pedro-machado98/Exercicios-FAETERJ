@@ -1,0 +1,31 @@
+package ap3;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				
+		try {
+			Estudante e1 = new Estudante("Pedro", 25, 1234);
+			FileOutputStream arqSer = new FileOutputStream("C:\\Users\\pedro.machado\\Desktop\\Repositorio GitHub\\Workspace Eclipse\\AP3\\files");
+			ObjectOutputStream oSer = new ObjectOutputStream(arqSer);
+			
+			oSer.writeObject(e1);
+			oSer.close();
+			arqSer.close();
+			
+		
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+
+	}
+
+}

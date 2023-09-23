@@ -1,0 +1,27 @@
+package ap3;
+
+	public class Estudante {
+		public String nome;
+		public int idade;
+		public int matricula;
+	}
+
+	public Estudante (String nome, int idade, int matricula ) {
+		this.nome = nome;
+		this.idade = idade;
+		this.matricula = matricula;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public int getIdade() {
+		return idade;
+	}
+	
+	public int gerMatricula() {
+		return matricula;
+	}
+}
+	

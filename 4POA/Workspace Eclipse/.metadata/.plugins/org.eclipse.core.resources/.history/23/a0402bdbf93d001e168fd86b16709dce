@@ -1,0 +1,8 @@
+package ap3;
+
+public class Estudante {
+	public String nome;
+	public int idade;
+	public String matricula;
+	public 
+}
